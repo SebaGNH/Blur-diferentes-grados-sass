@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +6,13 @@
 }
 
 body {
-  background-color: #292929;
+  background-image: linear-gradient(to right, #FFB220 0%, #fee140 50%, #FFB220 100%);
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  font-family: "Poppins", sans-serif;
 }
 
 main {
@@ -25,9 +27,10 @@ main ul {
 }
 main ul li {
   list-style: none;
+  transition: 0.5s;
 }
 main ul li img {
-  width: 100%;
+  width: 95%;
 }
 main ul li:nth-child(1) {
   filter: blur(1px);
@@ -55,7 +58,13 @@ main ul li:nth-child(8) {
 }
 main ul li:hover {
   filter: blur(0px);
-  transition: 0.5s;
+  cursor: crosshair;
+}
+main ul li p {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  font-size: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */

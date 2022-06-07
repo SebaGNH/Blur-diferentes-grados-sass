@@ -1,15 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap')
 *
     margin: 0
     padding: 0
     box-sizing: border-box
 
 body
-    background-color: #292929
+    //background-color: #292929
+    background-image: linear-gradient(to right, #FFB220 0%, #fee140 50% , #FFB220 100%)
     color: #fff    
     display: flex
     justify-content: center
     align-items: center
     min-height: 100vh
+    font-family: 'Poppins', sans-serif
 
 main    
     max-width: 1200px
@@ -21,9 +24,10 @@ main
         justify-content: space-between
         
         li
-            list-style: none            
+            list-style: none  
+            transition: .5s                   
             img
-                width: 100%
+                width: 95%
             &:nth-child(1)
                 filter: blur(1px)
             &:nth-child(2)
@@ -42,7 +46,12 @@ main
                 filter: blur(8px)
             &:hover
                 filter: blur(0px)
-                transition: .5s
+                cursor: crosshair
+            p
+                position: absolute
+                top: 50%
+                left: 10%
+                font-size: 2em
 
 
 

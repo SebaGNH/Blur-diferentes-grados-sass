@@ -1,0 +1,48 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background-color: #292929
+    color: #fff    
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 100vh
+
+main    
+    max-width: 1200px
+    width: 100%
+    ul
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        justify-content: space-between
+        
+        li
+            list-style: none            
+            img
+                width: 100%
+            &:nth-child(1)
+                filter: blur(1px)
+            &:nth-child(2)
+                filter: blur(2px)
+            &:nth-child(3)
+                filter: blur(3px)
+            &:nth-child(4)
+                filter: blur(4px)
+            &:nth-child(5)
+                filter: blur(5px)
+            &:nth-child(6)
+                filter: blur(6px)
+            &:nth-child(7)
+                filter: blur(7px)
+            &:nth-child(8)
+                filter: blur(8px)
+            &:hover
+                filter: blur(0px)
+                transition: .5s
+
+
+

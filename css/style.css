@@ -76,6 +76,7 @@ main ul li:nth-child(8) img {
 }
 main ul li:hover {
   filter: blur(0px);
+  transform: scale(1.05);
 }
 main ul li:hover img {
   filter: blur(0px);
@@ -83,6 +84,7 @@ main ul li:hover img {
 }
 main ul li:hover p {
   filter: blur(0px);
+  cursor: crosshair;
 }
 
 /*# sourceMappingURL=style.css.map */

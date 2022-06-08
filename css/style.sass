@@ -25,7 +25,7 @@ main
         flex-direction: row
         display: flex
         justify-content: space-around
-        align-items: center
+        align-items: center 
         li
             list-style: none  
             display: flex
@@ -36,7 +36,7 @@ main
                 width: 95%
                 height: 95%
                 margin: 2.5% 0
-                transition: .5s  
+                transition: .5s 
             p
                 position: absolute
                 top: 50%
@@ -69,11 +69,13 @@ main
                     filter: blur(7px)
             &:nth-child(8)
                 img
-                    filter: blur(8px)
+                    filter: blur(8px)                    
             &:hover
                 filter: blur(0px) 
+                transform: scale(1.05)                
                 img
                     filter: blur(0px)
-                    cursor: crosshair
+                    cursor: crosshair           
                 p
-                    filter: blur(0px)  
+                    filter: blur(0px) 
+                    cursor: crosshair 

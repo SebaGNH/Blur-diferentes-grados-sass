@@ -7,51 +7,73 @@
 body
     //background-color: #292929
     background-image: linear-gradient(to right, #FFB220 0%, #fee140 50% , #FFB220 100%)
-    color: #fff    
+    color: #fff 
+    font-family: 'Poppins', sans-serif
+
+
+
+main    
+    max-width: 1200px
+    width: 90%
     display: flex
     justify-content: center
     align-items: center
     min-height: 100vh
-    font-family: 'Poppins', sans-serif
-
-main    
-    max-width: 1200px
-    width: 100%
+    margin: 0 auto
     ul
-        display: flex
         flex-wrap: wrap
         flex-direction: row
-        justify-content: space-between
-        
+        display: flex
+        justify-content: space-around
+        align-items: center
         li
             list-style: none  
-            transition: .5s                   
+            display: flex
+            justify-content: center
+            position: relative
+            transition: .5s 
             img
                 width: 95%
-            &:nth-child(1)
-                filter: blur(1px)
-            &:nth-child(2)
-                filter: blur(2px)
-            &:nth-child(3)
-                filter: blur(3px)
-            &:nth-child(4)
-                filter: blur(4px)
-            &:nth-child(5)
-                filter: blur(5px)
-            &:nth-child(6)
-                filter: blur(6px)
-            &:nth-child(7)
-                filter: blur(7px)
-            &:nth-child(8)
-                filter: blur(8px)
-            &:hover
-                filter: blur(0px)
-                cursor: crosshair
+                height: 95%
+                margin: 2.5% 0
+                transition: .5s  
             p
                 position: absolute
                 top: 50%
-                left: 10%
-                font-size: 2em
-
-
-
+                left: 50%
+                transform: translate(-50%,-50%)
+                font-size: 3em
+                text-shadow: 0 0 8px #000
+                filter: blur(2px)
+                transition: .8s 
+            &:nth-child(1)
+                img
+                    filter: blur(1px)
+            &:nth-child(2)
+                img
+                    filter: blur(2px)
+            &:nth-child(3)
+                img
+                    filter: blur(3px)
+            &:nth-child(4)
+                img
+                    filter: blur(4px)
+            &:nth-child(5)
+                img
+                    filter: blur(5px)
+            &:nth-child(6)
+                img
+                    filter: blur(6px)
+            &:nth-child(7)
+                img
+                    filter: blur(7px)
+            &:nth-child(8)
+                img
+                    filter: blur(8px)
+            &:hover
+                filter: blur(0px) 
+                img
+                    filter: blur(0px)
+                    cursor: crosshair
+                p
+                    filter: blur(0px)  

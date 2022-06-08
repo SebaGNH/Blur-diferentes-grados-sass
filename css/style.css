@@ -8,63 +8,81 @@
 body {
   background-image: linear-gradient(to right, #FFB220 0%, #fee140 50%, #FFB220 100%);
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   font-family: "Poppins", sans-serif;
 }
 
 main {
   max-width: 1200px;
-  width: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0 auto;
 }
 main ul {
-  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 main ul li {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  position: relative;
   transition: 0.5s;
 }
 main ul li img {
   width: 95%;
-}
-main ul li:nth-child(1) {
-  filter: blur(1px);
-}
-main ul li:nth-child(2) {
-  filter: blur(2px);
-}
-main ul li:nth-child(3) {
-  filter: blur(3px);
-}
-main ul li:nth-child(4) {
-  filter: blur(4px);
-}
-main ul li:nth-child(5) {
-  filter: blur(5px);
-}
-main ul li:nth-child(6) {
-  filter: blur(6px);
-}
-main ul li:nth-child(7) {
-  filter: blur(7px);
-}
-main ul li:nth-child(8) {
-  filter: blur(8px);
-}
-main ul li:hover {
-  filter: blur(0px);
-  cursor: crosshair;
+  height: 95%;
+  margin: 2.5% 0;
+  transition: 0.5s;
 }
 main ul li p {
   position: absolute;
   top: 50%;
-  left: 10%;
-  font-size: 2em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  text-shadow: 0 0 8px #000;
+  filter: blur(2px);
+  transition: 0.8s;
+}
+main ul li:nth-child(1) img {
+  filter: blur(1px);
+}
+main ul li:nth-child(2) img {
+  filter: blur(2px);
+}
+main ul li:nth-child(3) img {
+  filter: blur(3px);
+}
+main ul li:nth-child(4) img {
+  filter: blur(4px);
+}
+main ul li:nth-child(5) img {
+  filter: blur(5px);
+}
+main ul li:nth-child(6) img {
+  filter: blur(6px);
+}
+main ul li:nth-child(7) img {
+  filter: blur(7px);
+}
+main ul li:nth-child(8) img {
+  filter: blur(8px);
+}
+main ul li:hover {
+  filter: blur(0px);
+}
+main ul li:hover img {
+  filter: blur(0px);
+  cursor: crosshair;
+}
+main ul li:hover p {
+  filter: blur(0px);
 }
 
 /*# sourceMappingURL=style.css.map */
